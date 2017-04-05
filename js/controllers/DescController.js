@@ -8,6 +8,6 @@ app.controller('DescController', ['$scope', 'streamers', '$routeParams', functio
  		channel: $scope.detail.channel.name,
 	};
 	var player = new Twitch.Player("videoTwitch", options);
-	player.setVolume(0);
+	player.setMuted(true);
   });
 }]);
