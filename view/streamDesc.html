@@ -1,0 +1,21 @@
+<div class="streamPage">
+	<div class="streamerDesc">
+			<img class="streamerLogos" ng-src="{{detail.channel.logo}}" alt="Streamer Logo" width="200" height="160">
+				<p><span class="descType">Display_Name: </span>{{detail.channel.display_name}}</p>
+				<p><span class="descType">Status: </span>{{detail.channel.status}}</p>
+				<p><span class="descType">Game: </span>{{detail.channel.game}}</p>
+				<p><span class="descType">Broadcaster_language: </span>{{detail.channel.broadcaster_language}}</p>
+				<p><span class="descType">Followers: </span>{{detail.channel.followers}}</p>
+				<p><span class="descType">Viewers: </span>{{detail.viewers}}</p>
+				<p><span class="descType">Channel_Name: </span>{{detail.channel.name}}</p>
+	</div>
+	<iframe
+		id="videoTwitch"
+		src=""
+		height="700"
+		width="68%"
+		frameborder="0"
+		scrolling="no"
+		allowfullscreen="true">
+	</iframe>
+</div>

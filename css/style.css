@@ -1,0 +1,89 @@
+
+body{
+	background: rgb(100,69,153);
+	padding: 0;
+	margin: 0;
+}
+
+.header{
+	padding: 3px;
+	width: auto;
+	background: black;
+	text-align: center;
+	color:white;
+}
+
+a:link{
+	text-decoration: none;
+}
+
+.streamItem{
+	margin: auto;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	width: 600px;
+	height: 160px;
+	border-style: solid;
+	border-width: 1px;
+}
+
+.streamerLogo{
+	display: inline-block;
+	margin: auto;
+}
+
+.streamerName{
+	margin: auto;
+	display: inline-block;
+	vertical-align: top;
+	color: white;
+}
+
+.gameLogo{
+	vertical-align: middle;
+	margin: 10px;
+}
+
+.streamerLogos{
+	display: block;
+    margin: auto;
+	width: 40%;
+}
+
+.streamerDesc{
+	color: white;
+	padding: 10px;
+	display: inline-block;
+	width: 30%;
+	height: 700px;
+	vertical-align: top;
+	text-align: left;
+}
+
+.streamPage{
+	background: rgb(44,38,64);
+	height: 720px;
+	margin: auto;
+}
+
+.blockStream{
+	background: rgb(44,38,64);
+	height: 160px;
+}
+
+.blockStream:hover{
+	background: gray;
+}
+
+.descType{
+	font-weight: bold;
+}
+
+#videoTwitch{
+	display: inline-block;
+	margin-top: 10px;
+}
+
+footer{
+	text-align: center;
+}

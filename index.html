@@ -1,23 +1,41 @@
----
-layout: default
----
+<!doctype html>
+<html>
+  <head>
+    <title>Top Streamers</title>
+	<link href="css/style.css" rel="stylesheet" />
+    
+    <!-- Include the core AngularJS library -->
+    <script src="js/shared/angular.min.js"></script>
+	<script src="js/shared/angular-mocks.js"></script>
+    
+    <!-- Include the AngularJS routing library -->
+    <script src="js/shared/angular-route.min.js"></script>
+	
+  </head>
+  <body ng-app="MyApp">
+	<a href="#/">
+    <div class="header">
+      <div class="container">
+          <img class="logo" src="img/twitch-logo.png" alt="No image" width="80" height="80">
+		  <h1 id="titre"> Top 25 streamers </h1>
+      </div>
+    </div>
+	</a>
+	
+    <div ng-view></div>
+	
+    <!-- Modules -->
+    <script src="js/app.js"></script>
 
-<div class="home">
+    <!-- Controllers -->
+    <script src="js/controllers/HomeController.js"></script>
+	<script src="js/controllers/DescController.js"></script>
+	
+    <!-- Services -->
+    <script src="js/services/streamers.js"></script>
 
-  <h1 class="page-heading">Posts de LOKEARY</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+  </body>
+  <footer>
+	Created by Christophe LAM
+  </footer>
+</html>

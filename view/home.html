@@ -1,0 +1,14 @@
+<div class="streamContainer">
+	<div class="streamItem" ng-repeat="streamer in streamersData.streams">
+		<a href="#/streamers/{{$index}}">
+		<div class="blockStream">
+				<img class="streamerLogo" src="{{streamer.channel.logo}}" alt="Streamer Logo" width="160" height="160"/>
+			<span class="streamerName">
+				<h2>{{streamer.channel.display_name}} </h2>
+				<img class="gameLogo" src="img/playing-logo.png" alt="Play Logo" width="40" height="40"><span class="gameName">{{streamer.channel.game}}</span></img>
+				
+			</span>
+		</div>
+		</a>
+	</div>
+</div>
