@@ -3,7 +3,7 @@ app.controller('DescController', ['$scope', 'streamers', '$routeParams', functio
 	$scope.detail = data.streams[$routeParams.id];
 	document.getElementById("titre").innerHTML = $scope.detail.channel.display_name;
 	var options = {
-		width: 1200,
+		width: 1000,
 		height: 700,
  		channel: $scope.detail.channel.name,
 	};
